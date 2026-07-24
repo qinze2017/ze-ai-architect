@@ -1,0 +1,13 @@
+{{ define "main" }}
+<section class="page-hero container reveal">
+  <p class="eyebrow">SEARCH</p>
+  <h1>{{ .Title }}</h1>
+  <p class="page-intro">输入关键词，搜索项目、学习记录、开发进度和文章。</p>
+</section>
+<section class="section container search-shell" data-search-page data-search-index="{{ (site.Home.OutputFormats.Get "SearchIndex").RelPermalink }}">
+  <label for="site-search">搜索内容</label>
+  <input id="site-search" class="search-input" type="search" placeholder="例如：RAG、Spring Boot、PromoLocal" autocomplete="off">
+  <p class="search-status" aria-live="polite">开始输入关键词。</p>
+  <div class="search-results card-grid"></div>
+</section>
+{{ end }}

@@ -1,0 +1,20 @@
+{{ define "main" }}
+<article class="article container">
+  <header class="article-header reveal">
+    <p class="eyebrow">{{ upper .Section }}</p>
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p class="article-description">{{ . }}</p>{{ else }}{{ with .Params.summary }}<p class="article-description">{{ . }}</p>{{ end }}{{ end }}
+    <div class="article-meta">
+      {{ if not .Date.IsZero }}<time datetime="{{ .Date.Format "2006-01-02" }}">发布于 {{ .Date.Format "2006-01-02" }}</time>{{ end }}
+      {{ if site.Params.showReadingTime }}<span>{{ .ReadingTime }} 分钟阅读</span>{{ end }}
+      {{ with .Params.status }}<span>状态：{{ . }}</span>{{ end }}
+    </div>
+    {{ with .Params.tags }}<div class="tag-row">{{ range . }}<a class="tag" href="{{ (printf "/tags/%s/" (. | urlize)) | relURL }}">#{{ . }}</a>{{ end }}</div>{{ end }}
+  </header>
+  <div class="article-layout">
+    <div class="prose article-body reveal">{{ .Content }}</div>
+    {{ if gt (len .TableOfContents) 100 }}<aside class="toc reveal"><strong>本页目录</strong>{{ .TableOfContents }}</aside>{{ end }}
+  </div>
+  {{ partial "giscus.html" . }}
+</article>
+{{ end }}

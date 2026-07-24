@@ -1,0 +1,26 @@
+name: Ze Qin
+headline: AI 软件架构与全栈开发
+intro: 我专注于 Java、Spring Boot、Python、LLM 应用、自动化与云端部署，把真实需求转化为可维护、可演进的软件产品。
+location: Sherbrooke, Québec, Canada
+availability: 持续构建真实产品，并向 AI 软件架构方向发展
+skills:
+  - Java / Spring Boot
+  - Python / FastAPI
+  - React / Next.js
+  - PostgreSQL
+  - Docker / Cloudflare
+  - LLM / RAG / Agents
+stats:
+  - value: 9+
+    label: 年软件开发经验
+  - value: 4+
+    label: 年企业全栈经验
+  - value: 3
+    label: 工作语言
+focus:
+  - title: AI 软件架构
+    text: LLM 应用、RAG、Agent、评估体系与可靠性设计。
+  - title: 产品工程
+    text: 从需求验证、系统设计到部署、监控和持续迭代。
+  - title: 自动化
+    text: 用 AI 和工作流减少重复劳动，提升真实业务效率。

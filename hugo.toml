@@ -1,0 +1,100 @@
+baseURL = "https://example.com/"
+languageCode = "zh-cn"
+title = "Ze Qin · AI 软件架构与开发"
+enableRobotsTXT = true
+enableGitInfo = false
+summaryLength = 32
+[pagination]
+  pagerSize = 8
+  path = "page"
+
+
+[params]
+  description = "个人简历、AI 软件架构实践、项目复盘与持续学习记录。"
+  author = "Ze Qin"
+  location = "Sherbrooke, Québec, Canada"
+  github = "https://github.com/qinze2017"
+  linkedin = ""
+  email = ""
+  defaultTheme = "system"
+  showReadingTime = true
+  showLastModified = true
+
+  [params.giscus]
+    enabled = false
+    repo = "OWNER/REPOSITORY"
+    repoId = ""
+    category = "Announcements"
+    categoryId = ""
+    mapping = "pathname"
+    reactionsEnabled = "1"
+    emitMetadata = "0"
+    inputPosition = "top"
+    theme = "preferred_color_scheme"
+    lang = "zh-CN"
+    loading = "lazy"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[permalinks]
+  posts = "/posts/:slug/"
+  learning = "/learning/:slug/"
+  progress = "/progress/:slug/"
+  projects = "/projects/:slug/"
+
+[outputs]
+  home = ["HTML", "RSS", "SearchIndex"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML"]
+  term = ["HTML"]
+
+[outputFormats.SearchIndex]
+  mediaType = "application/json"
+  baseName = "search-index"
+  isPlainText = true
+  notAlternative = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = false
+  [markup.highlight]
+    noClasses = false
+    codeFences = true
+    guessSyntax = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+    ordered = false
+
+[menus]
+  [[menus.main]]
+    name = "首页"
+    pageRef = "/"
+    weight = 10
+  [[menus.main]]
+    name = "关于我"
+    pageRef = "/about"
+    weight = 20
+  [[menus.main]]
+    name = "项目"
+    pageRef = "/projects"
+    weight = 30
+  [[menus.main]]
+    name = "学习"
+    pageRef = "/learning"
+    weight = 40
+  [[menus.main]]
+    name = "进度"
+    pageRef = "/progress"
+    weight = 50
+  [[menus.main]]
+    name = "文章"
+    pageRef = "/posts"
+    weight = 60
+  [[menus.main]]
+    name = "搜索"
+    pageRef = "/search"
+    weight = 70

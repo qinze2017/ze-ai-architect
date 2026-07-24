@@ -1,0 +1,23 @@
+{{ $g := site.Params.giscus }}
+{{ if and $g.enabled .Params.showComments }}
+<section class="comments" aria-label="评论与反应">
+  <h2>讨论与反馈</h2>
+  <p class="muted">评论和表情反应由 GitHub Discussions 保存。</p>
+  <script src="https://giscus.app/client.js"
+          data-repo="{{ $g.repo }}"
+          data-repo-id="{{ $g.repoId }}"
+          data-category="{{ $g.category }}"
+          data-category-id="{{ $g.categoryId }}"
+          data-mapping="{{ $g.mapping }}"
+          data-strict="1"
+          data-reactions-enabled="{{ $g.reactionsEnabled }}"
+          data-emit-metadata="{{ $g.emitMetadata }}"
+          data-input-position="{{ $g.inputPosition }}"
+          data-theme="{{ $g.theme }}"
+          data-lang="{{ $g.lang }}"
+          data-loading="{{ $g.loading }}"
+          crossorigin="anonymous"
+          async>
+  </script>
+</section>
+{{ end }}

@@ -1,0 +1,15 @@
+<article class="content-card reveal">
+  <div class="card-icon section-{{ .Section }}" aria-hidden="true">
+    {{ if eq .Section "projects" }}◫{{ else if eq .Section "learning" }}⌁{{ else if eq .Section "progress" }}↗{{ else }}✦{{ end }}
+  </div>
+  <div class="card-meta">
+    <span>{{ if eq .Section "projects" }}项目{{ else if eq .Section "learning" }}学习{{ else if eq .Section "progress" }}进度{{ else if eq .Section "posts" }}文章{{ else }}内容{{ end }}</span>
+    {{ if not .Date.IsZero }}<time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006.01.02" }}</time>{{ end }}
+  </div>
+  <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+  <p>{{ with .Summary }}{{ . | plainify | truncate 120 }}{{ else }}{{ .Description }}{{ end }}</p>
+  <div class="card-footer">
+    {{ with .Params.tags }}<div class="tag-row">{{ range first 2 . }}<span class="tag">{{ . }}</span>{{ end }}</div>{{ end }}
+    <a class="card-arrow" href="{{ .RelPermalink }}" aria-label="阅读 {{ .Title }}">↗</a>
+  </div>
+</article>

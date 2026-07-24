@@ -1,0 +1,16 @@
+<footer class="site-footer">
+  <div class="container footer-top">
+    <div class="footer-brand">
+      <span class="brand-mark"><span>Z</span><span>Q</span></span>
+      <div><strong>{{ site.Params.author }}</strong><p>{{ site.Params.description }}</p></div>
+    </div>
+    <div class="footer-nav">
+      <div><small>EXPLORE</small><a href="{{ "/projects/" | relURL }}">项目</a><a href="{{ "/learning/" | relURL }}">学习</a><a href="{{ "/progress/" | relURL }}">进度</a></div>
+      <div><small>CONNECT</small>{{ with site.Params.github }}<a href="{{ . }}" rel="me noopener" target="_blank">GitHub ↗</a>{{ end }}<a href="{{ "index.xml" | relURL }}">RSS</a><a href="{{ "sitemap.xml" | relURL }}">Sitemap</a></div>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© {{ now.Year }} {{ site.Params.author }}</span>
+    <span>Designed with intention · Built with Hugo</span>
+  </div>
+</footer>
