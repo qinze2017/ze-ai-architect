@@ -1,5 +1,9 @@
 [homeLink]
 other = "Return home"
+[commentsTitle]
+other = "Discussion and feedback"
+[commentsDescription]
+other = "Comments and reactions are stored in GitHub Discussions."
 [skipToContent]
 other = "Skip to main content"
 [brandRole]

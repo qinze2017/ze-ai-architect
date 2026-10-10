@@ -58,6 +58,7 @@ defaultContentLanguageInSubdir = false
     category = "Announcements"
     categoryId = "DIC_kwDOTh5MpM4DB2RV"
     mapping = "pathname"
+    strict = "0"
     reactionsEnabled = "1"
     emitMetadata = "0"
     inputPosition = "top"

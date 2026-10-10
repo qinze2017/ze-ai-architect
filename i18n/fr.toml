@@ -1,5 +1,9 @@
 [homeLink]
 other = "Retour à l’accueil"
+[commentsTitle]
+other = "Discussion et rétroaction"
+[commentsDescription]
+other = "Les commentaires et réactions sont enregistrés dans GitHub Discussions."
 [skipToContent]
 other = "Aller au contenu principal"
 [brandRole]

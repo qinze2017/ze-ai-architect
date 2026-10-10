@@ -1,5 +1,9 @@
 [homeLink]
 other = "返回首页"
+[commentsTitle]
+other = "讨论与反馈"
+[commentsDescription]
+other = "评论和表情反应由 GitHub Discussions 保存。"
 [skipToContent]
 other = "跳到主要内容"
 [brandRole]
