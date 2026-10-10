@@ -1,5 +1,6 @@
 {{ define "main" }}
 {{ $p := hugo.Data.profile }}
+{{ if ne site.Language.Lang "zh" }}{{ $p = index (index hugo.Data site.Language.Lang) "profile" }}{{ end }}
 <section class="hero hero-home">
   <div class="hero-orb hero-orb-one" aria-hidden="true"></div>
   <div class="hero-orb hero-orb-two" aria-hidden="true"></div>
@@ -7,24 +8,24 @@
     <div class="hero-copy reveal">
       <div class="availability-badge">
         <span class="pulse-dot" aria-hidden="true"></span>
-        <span>在 Sherbrooke 构建真实 AI 产品</span>
+        <span>{{ i18n "homeAvailability" }}</span>
       </div>
       <p class="hero-kicker">AI SOFTWARE ARCHITECT · FULL-STACK ENGINEER</p>
-      <h1>把复杂需求，设计成<br><span class="gradient-text">可靠、清晰、可演进</span>的软件。</h1>
+      <h1>{{ i18n "homeHeroStart" }}<br><span class="gradient-text">{{ i18n "homeHeroHighlight" }}</span>{{ i18n "homeHeroEnd" }}</h1>
       <p class="hero-intro">{{ $p.intro }}</p>
       <div class="hero-actions">
-        <a class="button primary" href="{{ "/projects/" | relURL }}">
-          浏览项目
+        <a class="button primary" href="{{ with site.GetPage "/projects" }}{{ .RelPermalink }}{{ else }}{{ site.Home.RelPermalink }}{{ end }}">
+          {{ i18n "browseProjects" }}
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
-        <a class="button secondary" href="{{ "/about/" | relURL }}">查看我的经历</a>
+        <a class="button secondary" href="{{ with site.GetPage "/about" }}{{ .RelPermalink }}{{ else }}{{ site.Home.RelPermalink }}{{ end }}">{{ i18n "viewExperience" }}</a>
       </div>
-      <div class="trust-row" aria-label="核心技术">
+      <div class="trust-row" aria-label="{{ i18n "techStack" }}">
         {{ range first 5 $p.skills }}<span>{{ . }}</span>{{ end }}
       </div>
     </div>
 
-    <div class="architecture-visual reveal" aria-label="AI 产品架构示意图">
+    <div class="architecture-visual reveal" aria-label="{{ i18n "architectureDiagram" }}">
       <div class="visual-toolbar">
         <span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
         <span>product-architecture.yaml</span>
@@ -34,19 +35,19 @@
         <div class="visual-grid" aria-hidden="true"></div>
         <div class="arch-node node-input">
           <span class="node-icon">01</span>
-          <div><small>INPUT</small><strong>Real user requirements</strong></div>
+          <div><small>{{ i18n "architectureInput" }}</small><strong>{{ i18n "architectureInputDetail" }}</strong></div>
         </div>
         <div class="arch-node node-ai">
           <span class="node-icon">AI</span>
-          <div><small>INTELLIGENCE</small><strong>LLM · RAG · Agent</strong></div>
+          <div><small>{{ i18n "architectureIntelligence" }}</small><strong>LLM · RAG · Agent</strong></div>
         </div>
         <div class="arch-node node-core">
           <span class="node-icon">{ }</span>
-          <div><small>CORE SYSTEM</small><strong>API · Data · Rules</strong></div>
+          <div><small>{{ i18n "architectureCore" }}</small><strong>API · {{ i18n "architectureData" }} · {{ i18n "architectureRules" }}</strong></div>
         </div>
         <div class="arch-node node-output">
           <span class="node-icon">✓</span>
-          <div><small>OUTCOME</small><strong>Reliable software product</strong></div>
+          <div><small>{{ i18n "architectureOutcome" }}</small><strong>{{ i18n "architectureOutcomeDetail" }}</strong></div>
         </div>
         <svg class="arch-lines" viewBox="0 0 600 420" preserveAspectRatio="none" aria-hidden="true">
           <g class="arch-lines-wide">
@@ -64,7 +65,7 @@
         <div class="floating-chip chip-two">observability</div>
       </div>
       <div class="visual-footer">
-        <span><i class="health-dot"></i> All systems operational</span>
+        <span><i class="health-dot"></i> {{ i18n "allSystemsOperational" }}</span>
         <span>v1.0.0</span>
       </div>
     </div>
@@ -81,10 +82,10 @@
 <section class="section container">
   <div class="section-heading split reveal">
     <div>
-      <p class="eyebrow">HOW I BUILD</p>
-      <h2>不只是写代码，<br>而是交付完整的产品系统。</h2>
+      <p class="eyebrow">{{ i18n "howIBuild" }}</p>
+      <h2>{{ i18n "homeFocusHeading" }}</h2>
     </div>
-    <p class="section-lead">从真实问题出发，在需求、架构、工程质量和成本之间做清晰取舍。</p>
+    <p class="section-lead">{{ i18n "homeFocusLead" }}</p>
   </div>
   <div class="focus-grid bento-grid">
     {{ range $index, $item := $p.focus }}
@@ -105,8 +106,8 @@
 <section class="section section-featured">
   <div class="container">
     <div class="section-heading reveal">
-      <p class="eyebrow">FEATURED CASE STUDY</p>
-      <h2>正在构建的真实产品</h2>
+      <p class="eyebrow">{{ i18n "featuredCase" }}</p>
+      <h2>{{ i18n "featuredHeading" }}</h2>
     </div>
     <article class="featured-project reveal">
       <div class="featured-copy">
@@ -114,14 +115,14 @@
           <span class="project-logo">P</span>
           <div><small>LOCAL DEAL INTELLIGENCE</small><strong>PromoLocal</strong></div>
         </div>
-        <h3>让魁北克消费者更快发现<br><span>真正值得买的本地优惠。</span></h3>
+        <h3>{{ i18n "promoHeadingStart" }}<br><span>{{ i18n "promoHeadingHighlight" }}</span></h3>
         <p>{{ .Params.summary }}</p>
         <div class="project-features">
-          <span>AI 图片识别</span><span>优惠结构化</span><span>内容自动化</span><span>成本与审计</span>
+          <span>{{ i18n "promoFeatureVision" }}</span><span>{{ i18n "promoFeatureStructuring" }}</span><span>{{ i18n "promoFeatureAutomation" }}</span><span>{{ i18n "promoFeatureCostAudit" }}</span>
         </div>
-        <a class="text-link" href="{{ .RelPermalink }}">查看项目架构与进展 <span>→</span></a>
+        <a class="text-link" href="{{ .RelPermalink }}">{{ i18n "viewProjectProgress" }} <span>→</span></a>
       </div>
-      <div class="project-dashboard" aria-label="PromoLocal 产品面板示意">
+      <div class="project-dashboard" aria-label="{{ i18n "promoDashboard" }}">
         <div class="dash-header">
           <span><i></i> PromoLocal Console</span>
           <span class="dash-date">Sherbrooke, QC</span>
@@ -147,8 +148,8 @@
 
 <section class="section container">
   <div class="section-heading split reveal">
-    <div><p class="eyebrow">BUILDING IN PUBLIC</p><h2>最近的思考与进展</h2></div>
-    <a class="section-link" href="{{ "/posts/" | relURL }}">浏览所有内容 <span>→</span></a>
+    <div><p class="eyebrow">{{ i18n "buildingInPublic" }}</p><h2>{{ i18n "recentThoughts" }}</h2></div>
+    <a class="section-link" href="{{ with site.GetPage "/posts" }}{{ .RelPermalink }}{{ else }}{{ site.Home.RelPermalink }}{{ end }}">{{ i18n "browseAllContent" }} <span>→</span></a>
   </div>
   <div class="card-grid latest-grid">
     {{ range first 4 (where site.RegularPages "Section" "in" (slice "projects" "learning" "progress" "posts")) }}
@@ -161,13 +162,13 @@
   <div class="container cta-card reveal">
     <div class="cta-glow" aria-hidden="true"></div>
     <div>
-      <p class="eyebrow">CONTINUOUS LEARNING</p>
-      <h2>公开记录每天真实的学习、<br>架构判断和产品进展。</h2>
-      <p>不仅展示结果，也保留做出每个技术选择的原因。</p>
+      <p class="eyebrow">{{ i18n "continuousLearning" }}</p>
+      <h2>{{ i18n "ctaHeading" }}</h2>
+      <p>{{ i18n "ctaBody" }}</p>
     </div>
     <div class="cta-actions">
-      <a class="button light" href="{{ "/progress/" | relURL }}">查看开发进度</a>
-      <a class="button ghost-light" href="{{ "/learning/" | relURL }}">进入学习记录</a>
+      <a class="button light" href="{{ with site.GetPage "/progress" }}{{ .RelPermalink }}{{ else }}{{ site.Home.RelPermalink }}{{ end }}">{{ i18n "viewProgress" }}</a>
+      <a class="button ghost-light" href="{{ with site.GetPage "/learning" }}{{ .RelPermalink }}{{ else }}{{ site.Home.RelPermalink }}{{ end }}">{{ i18n "openLearning" }}</a>
     </div>
   </div>
 </section>

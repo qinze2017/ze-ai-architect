@@ -5,12 +5,12 @@
       <div><strong>{{ site.Params.author }}</strong><p>{{ site.Params.description }}</p></div>
     </div>
     <div class="footer-nav">
-      <div><small>EXPLORE</small><a href="{{ "/projects/" | relURL }}">项目</a><a href="{{ "/learning/" | relURL }}">学习</a><a href="{{ "/progress/" | relURL }}">进度</a></div>
-      <div><small>CONNECT</small>{{ with site.Params.github }}<a href="{{ . }}" rel="me noopener" target="_blank">GitHub ↗</a>{{ end }}<a href="{{ "index.xml" | relURL }}">RSS</a><a href="{{ "sitemap.xml" | relURL }}">Sitemap</a></div>
+      <div><small>{{ i18n "footerExplore" }}</small><a href="{{ with site.GetPage "/projects" }}{{ .RelPermalink }}{{ else }}{{ site.Home.RelPermalink }}{{ end }}">{{ i18n "projects" }}</a><a href="{{ with site.GetPage "/learning" }}{{ .RelPermalink }}{{ else }}{{ site.Home.RelPermalink }}{{ end }}">{{ i18n "learning" }}</a><a href="{{ with site.GetPage "/progress" }}{{ .RelPermalink }}{{ else }}{{ site.Home.RelPermalink }}{{ end }}">{{ i18n "progress" }}</a></div>
+      <div><small>{{ i18n "footerConnect" }}</small>{{ with site.Params.github }}<a href="{{ . }}" rel="me noopener" target="_blank">GitHub ↗</a>{{ end }}<a href="{{ "index.xml" | relLangURL }}">RSS</a><a href="{{ "sitemap.xml" | relLangURL }}">Sitemap</a></div>
     </div>
   </div>
   <div class="container footer-bottom">
     <span>© {{ now.Year }} {{ site.Params.author }}</span>
-    <span>Designed with intention · Built with Hugo</span>
+    <span>{{ i18n "footerBuiltWith" }}</span>
   </div>
 </footer>

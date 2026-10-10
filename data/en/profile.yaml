@@ -1,0 +1,26 @@
+name: Ze Qin
+headline: AI software architecture and full-stack development
+intro: I turn real requirements into maintainable, evolvable software products with Java, Spring Boot, Python, LLM applications, automation, and cloud deployment.
+location: Sherbrooke, Québec, Canada
+availability: Continuously building real products while growing toward AI software architecture.
+skills:
+  - Java / Spring Boot
+  - Python / FastAPI
+  - React / Next.js
+  - PostgreSQL
+  - Docker / Cloudflare
+  - LLM / RAG / Agents
+stats:
+  - value: 9+
+    label: years in software development
+  - value: 4+
+    label: years in enterprise full-stack work
+  - value: 3
+    label: working languages
+focus:
+  - title: AI software architecture
+    text: LLM applications, RAG, Agent systems, evaluation, and reliability design.
+  - title: Product engineering
+    text: From requirement validation and system design to deployment, observability, and continuous iteration.
+  - title: Automation
+    text: Reducing repetitive work with AI and workflows to improve real business efficiency.

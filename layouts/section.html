@@ -16,10 +16,10 @@
 {{ define "pagination" }}
 {{ with . }}
   {{ if gt .TotalPages 1 }}
-  <nav class="pagination" aria-label="分页">
-    {{ with .Prev }}<a href="{{ .URL }}">← 上一页</a>{{ end }}
-    <span>第 {{ .PageNumber }} / {{ .TotalPages }} 页</span>
-    {{ with .Next }}<a href="{{ .URL }}">下一页 →</a>{{ end }}
+  <nav class="pagination" aria-label="{{ i18n "pagination" }}">
+    {{ with .Prev }}<a href="{{ .URL }}">← {{ i18n "previousPage" }}</a>{{ end }}
+    <span>{{ i18n "page" }} {{ .PageNumber }} / {{ .TotalPages }}</span>
+    {{ with .Next }}<a href="{{ .URL }}">{{ i18n "nextPage" }} →</a>{{ end }}
   </nav>
   {{ end }}
 {{ end }}

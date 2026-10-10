@@ -1,0 +1,154 @@
+[homeLink]
+other = "返回首页"
+[skipToContent]
+other = "跳到主要内容"
+[brandRole]
+other = "AI 产品工程师"
+[openNavigation]
+other = "打开导航"
+[mainNavigation]
+other = "主导航"
+[themeToggle]
+other = "切换明暗主题"
+[languageSwitcher]
+other = "选择语言"
+[languageZh]
+other = "中文"
+[languageFr]
+other = "FR"
+[languageEn]
+other = "EN"
+[footerExplore]
+other = "探索"
+[footerConnect]
+other = "联系"
+[footerBuiltWith]
+other = "用心设计 · 使用 Hugo 构建"
+[projects]
+other = "项目"
+[learning]
+other = "学习"
+[progress]
+other = "进度"
+[posts]
+other = "文章"
+[content]
+other = "内容"
+[read]
+other = "阅读"
+[homeAvailability]
+other = "在 Sherbrooke 构建真实 AI 产品"
+[homeHeroStart]
+other = "把复杂需求，设计成"
+[homeHeroHighlight]
+other = "可靠、清晰、可演进"
+[homeHeroEnd]
+other = "的软件。"
+[browseProjects]
+other = "浏览项目"
+[viewExperience]
+other = "查看我的经历"
+[techStack]
+other = "核心技术"
+[architectureDiagram]
+other = "AI 产品架构示意图"
+[architectureInput]
+other = "输入"
+[architectureInputDetail]
+other = "真实用户需求"
+[architectureIntelligence]
+other = "智能层"
+[architectureCore]
+other = "核心系统"
+[architectureData]
+other = "数据"
+[architectureRules]
+other = "规则"
+[architectureOutcome]
+other = "结果"
+[architectureOutcomeDetail]
+other = "可靠的软件产品"
+[allSystemsOperational]
+other = "所有系统运行正常"
+[howIBuild]
+other = "我的构建方式"
+[homeFocusHeading]
+other = "不只是写代码，而是交付完整的产品系统。"
+[homeFocusLead]
+other = "从真实问题出发，在需求、架构、工程质量和成本之间做清晰取舍。"
+[featuredCase]
+other = "精选案例"
+[featuredHeading]
+other = "正在构建的真实产品"
+[promoHeadingStart]
+other = "让魁北克消费者更快发现"
+[promoHeadingHighlight]
+other = "真正值得买的本地优惠。"
+[promoFeatureVision]
+other = "AI 图片识别"
+[promoFeatureStructuring]
+other = "优惠结构化"
+[promoFeatureAutomation]
+other = "内容自动化"
+[promoFeatureCostAudit]
+other = "成本与审计"
+[viewProjectProgress]
+other = "查看项目架构与进展"
+[promoDashboard]
+other = "PromoLocal 产品面板示意"
+[buildingInPublic]
+other = "公开构建"
+[recentThoughts]
+other = "最近的思考与进展"
+[browseAllContent]
+other = "浏览所有内容"
+[continuousLearning]
+other = "持续学习"
+[ctaHeading]
+other = "公开记录每天真实的学习、架构判断和产品进展。"
+[ctaBody]
+other = "不仅展示结果，也保留做出每个技术选择的原因。"
+[viewProgress]
+other = "查看开发进度"
+[openLearning]
+other = "进入学习记录"
+[search]
+other = "搜索"
+[searchIntro]
+other = "输入关键词，搜索项目、学习记录、开发进度和文章。"
+[searchContent]
+other = "搜索内容"
+[searchPlaceholder]
+other = "例如：RAG、Spring Boot、PromoLocal"
+[searchStart]
+other = "开始输入关键词。"
+[searchError]
+other = "搜索索引加载失败，请稍后重试。"
+[searchMinimum]
+other = "至少输入两个字符。"
+[searchResults]
+other = "找到的结果"
+[searchEmpty]
+other = "没有找到匹配内容。"
+[notFoundTitle]
+other = "这个页面不存在"
+[notFoundBody]
+other = "链接可能已经改变，或者页面尚未发布。"
+[returnHome]
+other = "返回首页"
+[publishedOn]
+other = "发布于"
+[minutesRead]
+other = "分钟阅读"
+[status]
+other = "状态"
+[tableOfContents]
+other = "本页目录"
+[pagination]
+other = "分页"
+[previousPage]
+other = "上一页"
+[nextPage]
+other = "下一页"
+[page]
+other = "第"

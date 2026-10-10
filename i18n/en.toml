@@ -1,0 +1,154 @@
+[homeLink]
+other = "Return home"
+[skipToContent]
+other = "Skip to main content"
+[brandRole]
+other = "AI PRODUCT ENGINEER"
+[openNavigation]
+other = "Open navigation"
+[mainNavigation]
+other = "Main navigation"
+[themeToggle]
+other = "Change theme"
+[languageSwitcher]
+other = "Choose language"
+[languageZh]
+other = "中文"
+[languageFr]
+other = "FR"
+[languageEn]
+other = "EN"
+[footerExplore]
+other = "EXPLORE"
+[footerConnect]
+other = "CONNECT"
+[footerBuiltWith]
+other = "Designed with intention · Built with Hugo"
+[projects]
+other = "Projects"
+[learning]
+other = "Learning"
+[progress]
+other = "Progress"
+[posts]
+other = "Posts"
+[content]
+other = "Content"
+[read]
+other = "Read"
+[homeAvailability]
+other = "Building real AI products in Sherbrooke"
+[homeHeroStart]
+other = "Turning complex requirements into"
+[homeHeroHighlight]
+other = "reliable, clear, evolvable"
+[homeHeroEnd]
+other = " software."
+[browseProjects]
+other = "Browse projects"
+[viewExperience]
+other = "View my experience"
+[techStack]
+other = "Core technologies"
+[architectureDiagram]
+other = "AI product architecture diagram"
+[architectureInput]
+other = "INPUT"
+[architectureInputDetail]
+other = "Real user requirements"
+[architectureIntelligence]
+other = "INTELLIGENCE"
+[architectureCore]
+other = "CORE SYSTEM"
+[architectureData]
+other = "Data"
+[architectureRules]
+other = "Rules"
+[architectureOutcome]
+other = "OUTCOME"
+[architectureOutcomeDetail]
+other = "Reliable software product"
+[allSystemsOperational]
+other = "All systems operational"
+[howIBuild]
+other = "HOW I BUILD"
+[homeFocusHeading]
+other = "More than code: complete product systems."
+[homeFocusLead]
+other = "Start with real problems and make clear trade-offs across requirements, architecture, engineering quality, and cost."
+[featuredCase]
+other = "FEATURED CASE STUDY"
+[featuredHeading]
+other = "A real product in progress"
+[promoHeadingStart]
+other = "Helping Québec consumers find"
+[promoHeadingHighlight]
+other = "local deals that are genuinely worth it."
+[promoFeatureVision]
+other = "AI image recognition"
+[promoFeatureStructuring]
+other = "Deal structuring"
+[promoFeatureAutomation]
+other = "Content automation"
+[promoFeatureCostAudit]
+other = "Cost and audit"
+[viewProjectProgress]
+other = "View architecture and progress"
+[promoDashboard]
+other = "PromoLocal product dashboard preview"
+[buildingInPublic]
+other = "BUILDING IN PUBLIC"
+[recentThoughts]
+other = "Recent thoughts and progress"
+[browseAllContent]
+other = "Browse all content"
+[continuousLearning]
+other = "CONTINUOUS LEARNING"
+[ctaHeading]
+other = "Documenting real learning, architecture decisions, and product progress every day."
+[ctaBody]
+other = "Showing not only outcomes, but the reasoning behind each technical choice."
+[viewProgress]
+other = "View progress"
+[openLearning]
+other = "Explore learning notes"
+[search]
+other = "SEARCH"
+[searchIntro]
+other = "Search projects, learning notes, development progress, and posts."
+[searchContent]
+other = "Search content"
+[searchPlaceholder]
+other = "For example: RAG, Spring Boot, PromoLocal"
+[searchStart]
+other = "Start typing to search."
+[searchError]
+other = "The search index is unavailable. Please try again later."
+[searchMinimum]
+other = "Enter at least two characters."
+[searchResults]
+other = "Results found:"
+[searchEmpty]
+other = "No matching content found."
+[notFoundTitle]
+other = "This page does not exist"
+[notFoundBody]
+other = "The link may have changed or the page has not been published yet."
+[returnHome]
+other = "Return home"
+[publishedOn]
+other = "Published"
+[minutesRead]
+other = "min read"
+[status]
+other = "Status"
+[tableOfContents]
+other = "On this page"
+[pagination]
+other = "Pagination"
+[previousPage]
+other = "Previous"
+[nextPage]
+other = "Next"
+[page]
+other = "Page"

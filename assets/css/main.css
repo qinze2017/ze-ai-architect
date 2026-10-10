@@ -149,11 +149,16 @@ svg { display: block; }
 .nav-links a { position: relative; padding: 8px 13px; border-radius: 999px; color: var(--muted); font-size: .83rem; font-weight: 690; white-space: nowrap; transition: color .2s ease, background .2s ease; }
 .nav-links a:hover, .nav-links a.active { color: var(--text); background: var(--surface-solid); }
 .nav-links a.active::after { content: ""; position: absolute; left: 50%; bottom: 3px; width: 4px; height: 4px; transform: translateX(-50%); border-radius: 50%; background: var(--accent); }
+.language-switcher { display: flex; align-items: center; padding: 3px; border: 1px solid var(--border); border-radius: 999px; background: var(--surface); }
+.language-switcher a { padding: 5px 7px; border-radius: 999px; color: var(--muted); font-size: .62rem; font-weight: 800; letter-spacing: .05em; line-height: 1; }
+.language-switcher a:hover, .language-switcher a.active { color: var(--text); background: var(--surface-solid); }
 .theme-toggle {
+  position: relative;
   width: 42px;
   height: 42px;
   display: grid;
   place-items: center;
+  padding: 0;
   border: 1px solid var(--border);
   border-radius: 50%;
   background: var(--surface);
@@ -161,7 +166,7 @@ svg { display: block; }
   transition: transform .2s ease, border-color .2s ease, background .2s ease;
 }
 .theme-toggle:hover { transform: rotate(8deg); border-color: var(--border-strong); background: var(--surface-solid); }
-.theme-toggle svg { position: absolute; width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; transition: opacity .2s ease, transform .25s ease; }
+.theme-toggle svg { grid-area: 1 / 1; display: block; width: 17px; height: 17px; margin: 0; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; line-height: 0; transition: opacity .2s ease, transform .25s ease; }
 .icon-moon { opacity: 0; transform: scale(.6) rotate(-25deg); }
 html[data-theme="dark"] .icon-sun { opacity: 0; transform: scale(.6) rotate(25deg); }
 html[data-theme="dark"] .icon-moon { opacity: 1; transform: scale(1) rotate(0); }
@@ -414,6 +419,14 @@ h3 { font-size: 1.32rem; }
 
 @media (max-width: 1080px) {
   .hero-grid { grid-template-columns: 1fr 420px; gap: 38px; }
+  .nav-toggle { display: block; }
+  .main-nav { position: absolute; top: 67px; left: 22px; right: 22px; display: none; align-items: stretch; flex-direction: column; padding: 12px; border: 1px solid var(--border); border-radius: 18px; background: var(--surface-solid); box-shadow: var(--shadow); }
+  .main-nav.open { display: flex; }
+  .nav-links { align-items: stretch; flex-direction: column; border: 0; border-radius: 12px; background: transparent; box-shadow: none; }
+  .nav-links a { padding: 11px 12px; border-radius: 10px; }
+  .nav-links a.active::after { left: auto; right: 10px; bottom: 50%; transform: translateY(50%); }
+  .language-switcher { align-self: flex-start; margin: 4px 8px; }
+  .theme-toggle { width: 100%; border-radius: 11px; }
   .architecture-visual { transform: none; }
   .architecture-visual.reveal, .architecture-visual.reveal.visible { transform: none; }
   .latest-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }

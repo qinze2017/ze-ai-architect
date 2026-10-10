@@ -1,13 +1,44 @@
-baseURL = "https://example.com/"
-languageCode = "zh-cn"
+baseURL = "https://ai.zeaitech.com/"
+
 title = "Ze Qin · AI 软件架构与开发"
 enableRobotsTXT = true
 enableGitInfo = false
 summaryLength = 32
+
+defaultContentLanguage = "zh"
+defaultContentLanguageInSubdir = false
+
 [pagination]
   pagerSize = 8
   path = "page"
 
+[languages]
+  [languages.zh]
+    label = "中文"
+    locale = "zh-CN"
+    weight = 1
+    title = "Ze Qin — AI 产品工程师"
+
+    [languages.zh.params]
+      description = "个人简历、AI 软件架构实践、项目复盘与持续学习记录。"
+
+  [languages.fr]
+    label = "Français"
+    locale = "fr-CA"
+    weight = 2
+    title = "Ze Qin — Ingénieur produit IA"
+
+    [languages.fr.params]
+      description = "Portfolio, architecture logicielle IA, projets et apprentissage continu."
+
+  [languages.en]
+    label = "English"
+    locale = "en-CA"
+    weight = 3
+    title = "Ze Qin — AI Product Engineer"
+
+    [languages.en.params]
+      description = "Portfolio, AI software architecture, project reviews, and continuous learning."
 
 [params]
   description = "个人简历、AI 软件架构实践、项目复盘与持续学习记录。"
@@ -21,17 +52,16 @@ summaryLength = 32
   showLastModified = true
 
   [params.giscus]
-    enabled = false
-    repo = "OWNER/REPOSITORY"
-    repoId = ""
+    enabled = true
+    repo = "qinze2017/ze-ai-architect"
+    repoId = "R_kgDOTh5MpA"
     category = "Announcements"
-    categoryId = ""
+    categoryId = "DIC_kwDOTh5MpM4DB2RV"
     mapping = "pathname"
     reactionsEnabled = "1"
     emitMetadata = "0"
     inputPosition = "top"
     theme = "preferred_color_scheme"
-    lang = "zh-CN"
     loading = "lazy"
 
 [taxonomies]
@@ -39,10 +69,10 @@ summaryLength = 32
   category = "categories"
 
 [permalinks]
-  posts = "/posts/:slug/"
-  learning = "/learning/:slug/"
-  progress = "/progress/:slug/"
-  projects = "/projects/:slug/"
+  posts = "/posts/:slugorcontentbasename/"
+  learning = "/learning/:slugorcontentbasename/"
+  progress = "/progress/:slugorcontentbasename/"
+  projects = "/projects/:slugorcontentbasename/"
 
 [outputs]
   home = ["HTML", "RSS", "SearchIndex"]
@@ -69,32 +99,109 @@ summaryLength = 32
     endLevel = 3
     ordered = false
 
-[menus]
-  [[menus.main]]
-    name = "首页"
-    pageRef = "/"
-    weight = 10
-  [[menus.main]]
-    name = "关于我"
-    pageRef = "/about"
-    weight = 20
-  [[menus.main]]
-    name = "项目"
-    pageRef = "/projects"
-    weight = 30
-  [[menus.main]]
-    name = "学习"
-    pageRef = "/learning"
-    weight = 40
-  [[menus.main]]
-    name = "进度"
-    pageRef = "/progress"
-    weight = 50
-  [[menus.main]]
-    name = "文章"
-    pageRef = "/posts"
-    weight = 60
-  [[menus.main]]
-    name = "搜索"
-    pageRef = "/search"
-    weight = 70
+[[languages.zh.menus.main]]
+  name = "首页"
+  pageRef = "/"
+  weight = 10
+
+[[languages.zh.menus.main]]
+  name = "关于我"
+  pageRef = "/about"
+  weight = 20
+
+[[languages.zh.menus.main]]
+  name = "项目"
+  pageRef = "/projects"
+  weight = 30
+
+[[languages.zh.menus.main]]
+  name = "学习"
+  pageRef = "/learning"
+  weight = 40
+
+[[languages.zh.menus.main]]
+  name = "进度"
+  pageRef = "/progress"
+  weight = 50
+
+[[languages.zh.menus.main]]
+  name = "文章"
+  pageRef = "/posts"
+  weight = 60
+
+[[languages.zh.menus.main]]
+  name = "搜索"
+  pageRef = "/search"
+  weight = 70
+
+
+[[languages.fr.menus.main]]
+  name = "Accueil"
+  pageRef = "/"
+  weight = 10
+
+[[languages.fr.menus.main]]
+  name = "À propos"
+  pageRef = "/about"
+  weight = 20
+
+[[languages.fr.menus.main]]
+  name = "Projets"
+  pageRef = "/projects"
+  weight = 30
+
+[[languages.fr.menus.main]]
+  name = "Apprentissage"
+  pageRef = "/learning"
+  weight = 40
+
+[[languages.fr.menus.main]]
+  name = "Progression"
+  pageRef = "/progress"
+  weight = 50
+
+[[languages.fr.menus.main]]
+  name = "Articles"
+  pageRef = "/posts"
+  weight = 60
+
+[[languages.fr.menus.main]]
+  name = "Recherche"
+  pageRef = "/search"
+  weight = 70
+
+
+[[languages.en.menus.main]]
+  name = "Home"
+  pageRef = "/"
+  weight = 10
+
+[[languages.en.menus.main]]
+  name = "About"
+  pageRef = "/about"
+  weight = 20
+
+[[languages.en.menus.main]]
+  name = "Projects"
+  pageRef = "/projects"
+  weight = 30
+
+[[languages.en.menus.main]]
+  name = "Learning"
+  pageRef = "/learning"
+  weight = 40
+
+[[languages.en.menus.main]]
+  name = "Progress"
+  pageRef = "/progress"
+  weight = 50
+
+[[languages.en.menus.main]]
+  name = "Posts"
+  pageRef = "/posts"
+  weight = 60
+
+[[languages.en.menus.main]]
+  name = "Search"
+  pageRef = "/search"
+  weight = 70

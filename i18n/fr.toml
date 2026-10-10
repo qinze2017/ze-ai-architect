@@ -1,0 +1,154 @@
+[homeLink]
+other = "Retour à l’accueil"
+[skipToContent]
+other = "Aller au contenu principal"
+[brandRole]
+other = "INGÉNIEUR PRODUIT IA"
+[openNavigation]
+other = "Ouvrir la navigation"
+[mainNavigation]
+other = "Navigation principale"
+[themeToggle]
+other = "Changer le thème"
+[languageSwitcher]
+other = "Choisir la langue"
+[languageZh]
+other = "中文"
+[languageFr]
+other = "FR"
+[languageEn]
+other = "EN"
+[footerExplore]
+other = "EXPLORER"
+[footerConnect]
+other = "CONTACT"
+[footerBuiltWith]
+other = "Conçu avec intention · Propulsé par Hugo"
+[projects]
+other = "Projets"
+[learning]
+other = "Apprentissage"
+[progress]
+other = "Progression"
+[posts]
+other = "Articles"
+[content]
+other = "Contenu"
+[read]
+other = "Lire"
+[homeAvailability]
+other = "Création de produits IA concrets à Sherbrooke"
+[homeHeroStart]
+other = "Transformer des besoins complexes en logiciels"
+[homeHeroHighlight]
+other = "fiables, clairs et évolutifs"
+[homeHeroEnd]
+other = "."
+[browseProjects]
+other = "Voir les projets"
+[viewExperience]
+other = "Voir mon parcours"
+[techStack]
+other = "Technologies principales"
+[architectureDiagram]
+other = "Schéma d’architecture de produit IA"
+[architectureInput]
+other = "ENTRÉE"
+[architectureInputDetail]
+other = "Besoins réels des utilisateurs"
+[architectureIntelligence]
+other = "INTELLIGENCE"
+[architectureCore]
+other = "SYSTÈME CENTRAL"
+[architectureData]
+other = "Données"
+[architectureRules]
+other = "Règles"
+[architectureOutcome]
+other = "RÉSULTAT"
+[architectureOutcomeDetail]
+other = "Produit logiciel fiable"
+[allSystemsOperational]
+other = "Tous les systèmes sont opérationnels"
+[howIBuild]
+other = "MA FAÇON DE CONSTRUIRE"
+[homeFocusHeading]
+other = "Plus que du code : des systèmes produits complets."
+[homeFocusLead]
+other = "Partir de problèmes réels et arbitrer clairement entre besoins, architecture, qualité d’ingénierie et coûts."
+[featuredCase]
+other = "ÉTUDE DE CAS VEDETTE"
+[featuredHeading]
+other = "Un produit concret en cours de construction"
+[promoHeadingStart]
+other = "Aider les consommateurs du Québec à trouver plus vite"
+[promoHeadingHighlight]
+other = "les vraies bonnes aubaines locales."
+[promoFeatureVision]
+other = "Reconnaissance d’images par IA"
+[promoFeatureStructuring]
+other = "Structuration des aubaines"
+[promoFeatureAutomation]
+other = "Automatisation du contenu"
+[promoFeatureCostAudit]
+other = "Coûts et audit"
+[viewProjectProgress]
+other = "Voir l’architecture et la progression"
+[promoDashboard]
+other = "Aperçu du tableau de bord PromoLocal"
+[buildingInPublic]
+other = "CONSTRUIRE EN PUBLIC"
+[recentThoughts]
+other = "Réflexions et progrès récents"
+[browseAllContent]
+other = "Voir tout le contenu"
+[continuousLearning]
+other = "APPRENTISSAGE CONTINU"
+[ctaHeading]
+other = "Documenter chaque jour les apprentissages, décisions d’architecture et progrès produit."
+[ctaBody]
+other = "Montrer les résultats, mais aussi les raisons derrière chaque choix technique."
+[viewProgress]
+other = "Voir la progression"
+[openLearning]
+other = "Consulter les apprentissages"
+[search]
+other = "RECHERCHE"
+[searchIntro]
+other = "Recherchez parmi les projets, apprentissages, progrès et articles."
+[searchContent]
+other = "Rechercher du contenu"
+[searchPlaceholder]
+other = "Ex. : RAG, Spring Boot, PromoLocal"
+[searchStart]
+other = "Commencez à saisir un mot-clé."
+[searchError]
+other = "L’index de recherche est indisponible. Réessayez plus tard."
+[searchMinimum]
+other = "Saisissez au moins deux caractères."
+[searchResults]
+other = "Résultats trouvés :"
+[searchEmpty]
+other = "Aucun contenu correspondant."
+[notFoundTitle]
+other = "Cette page n’existe pas"
+[notFoundBody]
+other = "Le lien a peut-être changé ou la page n’est pas encore publiée."
+[returnHome]
+other = "Retour à l’accueil"
+[publishedOn]
+other = "Publié le"
+[minutesRead]
+other = "min de lecture"
+[status]
+other = "Statut"
+[tableOfContents]
+other = "Sommaire"
+[pagination]
+other = "Pagination"
+[previousPage]
+other = "Précédent"
+[nextPage]
+other = "Suivant"
+[page]
+other = "Page"

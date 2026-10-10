@@ -86,7 +86,7 @@
         return response.json();
       })
       .then((data) => { index = data; })
-      .catch(() => { status.textContent = '搜索索引加载失败，请稍后重试。'; });
+      .catch(() => { status.textContent = searchPage.dataset.searchError; });
 
     const escapeHtml = (value) => String(value).replace(/[&<>'"]/g, (char) => ({
       '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;'
@@ -96,7 +96,7 @@
       const query = input.value.trim().toLocaleLowerCase();
       results.innerHTML = '';
       if (query.length < 2) {
-        status.textContent = '至少输入两个字符。';
+        status.textContent = searchPage.dataset.searchMinimum;
         return;
       }
       const matches = index.filter((item) => {
@@ -104,7 +104,7 @@
         return haystack.includes(query);
       }).slice(0, 20);
 
-      status.textContent = matches.length ? `找到 ${matches.length} 条结果。` : '没有找到匹配内容。';
+      status.textContent = matches.length ? `${searchPage.dataset.searchResults} ${matches.length}` : searchPage.dataset.searchEmpty;
       results.innerHTML = matches.map((item) => `
         <article class="content-card visible">
           <div class="card-icon">✦</div>

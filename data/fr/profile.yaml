@@ -1,0 +1,26 @@
+name: Ze Qin
+headline: Architecture logicielle IA et développement full-stack
+intro: Je transforme les besoins concrets en produits logiciels maintenables et évolutifs avec Java, Spring Boot, Python, des applications LLM, l’automatisation et le déploiement infonuagique.
+location: Sherbrooke, Québec, Canada
+availability: Construction continue de produits concrets et progression vers l’architecture logicielle IA.
+skills:
+  - Java / Spring Boot
+  - Python / FastAPI
+  - React / Next.js
+  - PostgreSQL
+  - Docker / Cloudflare
+  - LLM / RAG / Agents
+stats:
+  - value: 9+
+    label: années en développement logiciel
+  - value: 4+
+    label: années en full-stack d’entreprise
+  - value: 3
+    label: langues de travail
+focus:
+  - title: Architecture logicielle IA
+    text: Applications LLM, RAG, Agent, évaluation et conception de la fiabilité.
+  - title: Ingénierie produit
+    text: De la validation des besoins à la conception, au déploiement, à l’observabilité et à l’itération continue.
+  - title: Automatisation
+    text: Réduire le travail répétitif par l’IA et les flux de travail pour améliorer l’efficacité réelle.
