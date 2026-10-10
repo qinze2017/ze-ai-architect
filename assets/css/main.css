@@ -165,7 +165,9 @@ svg { display: block; }
   cursor: pointer;
   transition: transform .2s ease, border-color .2s ease, background .2s ease;
 }
-.theme-toggle:hover { transform: rotate(8deg); border-color: var(--border-strong); background: var(--surface-solid); }
+@media (hover: hover) and (pointer: fine) {
+  .theme-toggle:hover { transform: rotate(8deg); border-color: var(--border-strong); background: var(--surface-solid); }
+}
 .theme-toggle svg { grid-area: 1 / 1; display: block; width: 17px; height: 17px; margin: 0; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; line-height: 0; transition: opacity .2s ease, transform .25s ease; }
 .icon-moon { opacity: 0; transform: scale(.6) rotate(-25deg); }
 html[data-theme="dark"] .icon-sun { opacity: 0; transform: scale(.6) rotate(25deg); }
@@ -427,6 +429,7 @@ h3 { font-size: 1.32rem; }
   .nav-links a.active::after { left: auto; right: 10px; bottom: 50%; transform: translateY(50%); }
   .language-switcher { align-self: flex-start; margin: 4px 8px; }
   .theme-toggle { width: 100%; border-radius: 11px; }
+  .theme-toggle, .theme-toggle:hover, .theme-toggle:focus, .theme-toggle:active { transform: none; rotate: none; }
   .architecture-visual { transform: none; }
   .architecture-visual.reveal, .architecture-visual.reveal.visible { transform: none; }
   .latest-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
