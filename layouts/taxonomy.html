@@ -1,0 +1,13 @@
+{{ define "main" }}
+<section class="page-hero container reveal">
+  <p class="eyebrow">{{ upper .Kind }}</p>
+  <h1>{{ .Title }}</h1>
+</section>
+<section class="section container">
+  <ul class="taxonomy-terms" role="list">
+    {{ range .Data.Terms.ByCount }}
+      <li><a class="tag" href="{{ .Page.RelPermalink }}">{{ .Page.Title }} <span>({{ .Count }})</span></a></li>
+    {{ end }}
+  </ul>
+</section>
+{{ end }}

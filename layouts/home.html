@@ -1,5 +1,5 @@
 {{ define "main" }}
-{{ $p := site.Data.profile }}
+{{ $p := hugo.Data.profile }}
 <section class="hero hero-home">
   <div class="hero-orb hero-orb-one" aria-hidden="true"></div>
   <div class="hero-orb hero-orb-two" aria-hidden="true"></div>
@@ -34,7 +34,7 @@
         <div class="visual-grid" aria-hidden="true"></div>
         <div class="arch-node node-input">
           <span class="node-icon">01</span>
-          <div><small>INPUT</small><strong>真实用户需求</strong></div>
+          <div><small>INPUT</small><strong>Real user requirements</strong></div>
         </div>
         <div class="arch-node node-ai">
           <span class="node-icon">AI</span>
@@ -42,16 +42,23 @@
         </div>
         <div class="arch-node node-core">
           <span class="node-icon">{ }</span>
-          <div><small>CORE SYSTEM</small><strong>API · 数据 · 规则</strong></div>
+          <div><small>CORE SYSTEM</small><strong>API · Data · Rules</strong></div>
         </div>
         <div class="arch-node node-output">
           <span class="node-icon">✓</span>
-          <div><small>OUTCOME</small><strong>可靠软件产品</strong></div>
+          <div><small>OUTCOME</small><strong>Reliable software product</strong></div>
         </div>
         <svg class="arch-lines" viewBox="0 0 600 420" preserveAspectRatio="none" aria-hidden="true">
-          <path d="M162 95 C245 95 230 195 310 195"/>
-          <path d="M162 325 C245 325 230 225 310 225"/>
-          <path d="M420 210 C475 210 470 210 520 210"/>
+          <g class="arch-lines-wide">
+            <path d="M258 105 C286 105 314 105 342 105"/>
+            <path d="M450 157 C450 225 350 255 258 300"/>
+            <path d="M258 315 C286 315 314 315 342 315"/>
+          </g>
+          <g class="arch-lines-narrow">
+            <path d="M300 70 L300 112"/>
+            <path d="M300 169 L300 213"/>
+            <path d="M300 270 L300 314"/>
+          </g>
         </svg>
         <div class="floating-chip chip-one">evaluation ✓</div>
         <div class="floating-chip chip-two">observability</div>
