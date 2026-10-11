@@ -12,7 +12,7 @@
     {{ with .Params.tags }}<div class="tag-row">{{ range . }}<a class="tag" href="{{ (printf "/tags/%s/" (. | urlize)) | relURL }}">#{{ . }}</a>{{ end }}</div>{{ end }}
   </header>
   <div class="article-layout">
-    <div class="prose article-body reveal">{{ .Content }}</div>
+    <div class="prose article-body">{{ .Content }}</div>
     {{ if gt (len .TableOfContents) 100 }}<aside class="toc reveal"><strong>{{ i18n "tableOfContents" }}</strong>{{ .TableOfContents }}</aside>{{ end }}
   </div>
   {{ partial "giscus.html" . }}

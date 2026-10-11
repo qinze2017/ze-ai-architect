@@ -371,6 +371,7 @@ h3 { font-size: 1.32rem; }
 .article-meta span::before, .article-meta time::before { content: ""; width: 5px; height: 5px; border-radius: 50%; background: var(--accent); }
 .article-header > .tag-row { margin-top: 20px; }
 .article-layout { display: grid; grid-template-columns: minmax(0, 760px) minmax(220px, 1fr); gap: 64px; align-items: start; }
+.article-body { opacity: 1; transform: none; }
 .prose { font-size: 1.02rem; }
 .prose h2 { margin: 2.3em 0 .7em; font-size: 1.8rem; }
 .prose h3 { margin: 1.9em 0 .55em; font-size: 1.3rem; }
