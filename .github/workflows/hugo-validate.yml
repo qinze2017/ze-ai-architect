@@ -1,0 +1,32 @@
+name: Hugo Validate
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - content/learning/**
+      - layouts/**
+      - assets/**
+      - static/**
+      - hugo.toml
+      - .github/workflows/hugo-validate.yml
+  pull_request:
+    branches: [main]
+    paths:
+      - content/learning/**
+      - layouts/**
+      - assets/**
+      - static/**
+      - hugo.toml
+      - .github/workflows/hugo-validate.yml
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: latest
+          extended: true
+      - run: hugo --minify
