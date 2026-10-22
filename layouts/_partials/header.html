@@ -18,6 +18,9 @@
       <div class="language-switcher" aria-label="{{ i18n "languageSwitcher" }}">
         {{ range hugo.Sites }}
           {{ $target := .Home }}
+          {{ if $page.Section }}
+            {{ with .GetPage (printf "/%s" $page.Section) }}{{ $target = . }}{{ end }}
+          {{ end }}
           {{ range $translations }}{{ if eq .Language.Lang $target.Language.Lang }}{{ $target = . }}{{ end }}{{ end }}
           <a href="{{ $target.RelPermalink }}" lang="{{ .Language.Lang }}"{{ if eq .Language.Lang $page.Language.Lang }} class="active" aria-current="page"{{ end }}>{{ if eq .Language.Lang "zh" }}{{ i18n "languageZh" }}{{ else if eq .Language.Lang "fr" }}{{ i18n "languageFr" }}{{ else }}{{ i18n "languageEn" }}{{ end }}</a>
         {{ end }}
